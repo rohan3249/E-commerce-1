@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: linear .4s;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* typescript start  */
+h1 {
+    font-size: 45px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* typescript end  */
+
+/* header start  */
+#check {
+    display: none;
+}
+
+#check-btn {
+    display: none;
+}
+
+header {
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+header img {
+    width: 114px;
+}
+
+.navbar {
+    display: flex;
+}
+
+header li {
+    margin: 0 20px;
+}
+
+header li a {
+    color: black;
+}
+
+header li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.right-icon {
+    margin-left: 10px;
+    color: black;
+}
+
+section {
+    padding: 10% 10%;
+}
+
+/* home start  */
+#home {
+    padding: 18% 10%;
+    background-image: url(images/banner-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#home h5 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.shop {
+    color: black;
+    border: 2px solid;
+    padding: 10px 0px;
+    padding-right: 52px;
+    padding-left: 20px;
+    line-height: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.shop .material-symbols-outlined {
+    position: absolute;
+    font-size: 20px;
+    top: 26%;
+    left: 70%;
+}
+
+.shop:hover {
+    background-color: black;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+/* home end  */
+
+/* shop start  */
+#shop h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#shop h2 span {
+    color: red;
+}
+
+.shop-cloths,
+.shop-cloths2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.shop-cloths2 {
+    margin-top: 40px;
+}
+
+.shop-cloths img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.shop-cloths2 img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    transform: scale(1);
+}
+
+.row1 .image:hover img {
+    transform: scale(0.9);
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image h5 {
+    position: absolute;
+    text-transform: uppercase;
+    background-color: green;
+    color: #fff;
+    width: 40px;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    top: 0;
+    left: 10px;
+    top: 10px;
+    padding: 2px 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    color: yellowgreen;
+}
+
+.row1 h6 {
+    margin: 8px 0;
+}
+
+/* shop end  */
+
+/* review start  */
+#reviews {
+    text-align: center;
+    background-color: rgb(212, 217, 216);
+}
+
+#reviews img {
+    margin: 20px 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#reviews h3 {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+#reviews h4 {
+    font-weight: 400;
+}
+
+/* review end  */
+
+/* blog start  */
+#page h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blog img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.picture h3 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.picture h4 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.picture h6 {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+/* blog end  */
+
+/* footer start  */
+footer {
+    background-color: rgb(212, 217, 216);
+}
+
+.contact {
+    padding: 8% 10%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.contact img {
+    width: 140px;
+}
+
+.number {
+    margin: 5px 0;
+}
+
+.text a {
+    font-size: 12px;
+    color: black;
+    font-weight: 400;
+}
+
+.text li {
+    margin: 4px 0;
+}
+
+.link {
+    padding: 0 5px;
+}
+
+.icon1 .link i:hover {
+    transform: scale(1.5);
+}
+
+/* footer end  */
+/* copyright start  */
+.copy {
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(212, 217, 216);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+/* tablet screen  */
+@media (max-width:1024px) {
+    .navbar {
+        display: block;
+        position: absolute;
+        top: 100%;
+        width: 20%;
+        height: 100vh;
+        background-color: black;
+        left: -600px;
+        opacity: 0.9;
+        z-index: 1;
+    }
+
+    .navbar li {
+        padding: 35px 50px;
+    }
+
+    .navbar li a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    #check-btn .material-symbols-outlined {
+        display: block;
+        color: black;
+        font-size: 25px;
+        position: absolute;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/* tablet screen  */
+@media (min-width:769px) and (max-width:1024px) {
+    header {
+        padding: 2% 10%;
+        align-items: center;
+    }
+
+    header .icon {
+        position: absolute;
+        right: 15%;
+        top: 33%;
+    }
+    #check-btn{
+        display: block;
+    }
+    #check-btn .material-symbols-outlined {
+    top: 33%;
+    right: 10%;
+}
+    .navbar li {
+        padding: 20px 50px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h6 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    section {
+        padding: 10% 20%;
+    }
+
+    #home h5 {
+        font-size: 22px;
+    }
+
+    .shop-cloths,
+    .shop-cloths2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .fa-solid,
+    .fas {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .fa-regular,
+    .far {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .row1 .image h5 {
+        font-size: 12px;
+    }
+
+    #reviews h3 {
+        margin: 10px 0;
+        font-size: 30px;
+    }
+
+    #reviews h4 {
+        font-size: 20px;
+    }
+
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .picture h3 {
+        font-size: 20px;
+    }
+
+    .picture h4 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    .picture h6 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .contact {
+        padding: 8% 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+
+    }
+
+    .contact img {
+        width: 140px;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        padding: 8% 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(236px, auto));
+        gap: 3rem;
+    }
+
+    .text h3 {
+        font-size: 25px;
+    }
+
+    .text a {
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+    }
+
+    .text li {
+        margin: 15px 0;
+    }
+
+    .text .number {
+        margin: 15px 0;
+    }
+
+    .fa-brands,
+    .fab {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .copy {
+        padding: 25px 0;
+        font-size: 18px;
+    }
+}
+
+/* mobile screen  */
+@media (min-width:300px) and (max-width:768px) {
+    header {
+        padding: 3% 10%;
+    }
+
+    header img {
+        width: 70px;
+    }
+
+    .icon .material-symbols-outlined {
+        font-size: 25px;
+    }
+
+    header .icon {
+        position: absolute;
+        right: 22%;
+        top: 22%;
+    }
+    #check-btn{
+        display: block;
+    }
+    #check-btn .material-symbols-outlined {
+        position: absolute;
+        top: 22%;
+        right: 10%;
+    }
+
+    .right-icon {
+        margin-left: 10px;
+        color: black;
+    }
+
+    .navbar {
+        width: 45%;
+    }
+
+    .navbar li {
+        padding: 12px 50px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    section {
+        padding: 15% 14%;
+    }
+
+    #home {
+        padding: 24% 10%;
+    }
+
+    #home h5 {
+        font-size: 11px;
+        margin: 8px 0;
+    }
+
+    .shop {
+        color: black;
+        border: 2px solid;
+        padding: 6px 15px;
+        padding-right: 46px;
+        line-height: 70px;
+    }
+
+    .shop-cloths,
+    .shop-cloths2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .fa-solid,
+    .fas {
+        font-weight: 900;
+        font-size: 15px;
+    }
+
+    .fa-regular,
+    .far {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .row1 .image h5 {
+        font-size: 13px;
+    }
+
+    #pages h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #reviews h3 {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+
+    #reviews h4 {
+        font-size: 17px;
+    }
+
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .picture h3 {
+        font-size: 20px;
+    }
+
+    .picture h4 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    .picture h6 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .contact img {
+        width: 111px;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        padding: 8% 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .text h3 {
+        font-size: 25px;
+    }
+
+    .text a {
+        font-size: 15px;
+        color: black;
+        font-weight: 400;
+    }
+
+    .text li {
+        margin: 15px 0;
+    }
+
+    .text .number {
+        margin: 15px 0;
+    }
+
+    .fa-brands,
+    .fab {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .copy {
+        padding: 25px 0;
+        font-size: 16px;
+    }
+}
+
+/* keypad mobile screen  */
+@media (max-width:299px) {
+    header {
+        padding: 3% 10%;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 12rem;
+        text-align: center;
+    }
+
+    .navbar li a {
+        color: #fff;
+        text-decoration: underline;
+        font-size: 10px;
+    }
+
+    header img {
+        width: 50px;
+    }
+
+    .icon .material-symbols-outlined {
+        font-size: 18px;
+    }
+
+    header .icon {
+        position: absolute;
+        right: 24%;
+        top: 26%;
+    }
+    #check-btn{
+        display: block;
+    }
+    #check-btn .material-symbols-outlined {
+        right: 10%;
+        font-size: 18px;
+        top: 29%;
+    }
+
+    .right-icon {
+        margin-left: 10px;
+        color: black;
+    }
+
+    .navbar {
+        width: 45%;
+    }
+
+    .navbar li {
+        padding: 6px 0px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 7px;
+        font-weight: 500;
+    }
+
+    section {
+        padding: 20% 14%;
+    }
+
+    #home {
+        padding: 24% 10%;
+    }
+
+    #home h5 {
+        font-size: 10px;
+        margin: 8px 0;
+    }
+
+    #shop h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .shop {
+        color: black;
+        border: 2px solid;
+        padding: 3px 8px;
+        padding-right: 27px;
+        line-height: 70px;
+        font-size: 12px;
+    }
+
+    .shop .material-symbols-outlined {
+        position: absolute;
+        font-size: 17px;
+        top: 17%;
+        left: 80%;
+    }
+
+    .shop-cloths,
+    .shop-cloths2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .fa-solid,
+    .fas {
+        font-weight: 900;
+        font-size: 10px;
+    }
+
+    .fa-regular,
+    .far {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .row1 .image h5 {
+        font-size: 8px;
+    }
+
+    #pages h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #reviews h3 {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    #reviews h4 {
+        font-size: 14px;
+    }
+
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .picture h3 {
+        font-size: 14px;
+    }
+
+    .picture h4 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .picture h6 {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .contact img {
+        width: 70px;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        padding: 8% 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .text h3 {
+        font-size: 18px;
+    }
+
+    .text a {
+        font-size: 10px;
+        color: black;
+        font-weight: 400;
+    }
+
+    .text li {
+        margin: 0;
+    }
+
+    .text .number {
+        margin: 15px 0;
+    }
+
+    .fa-brands,
+    .fab {
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    .copy {
+        padding: 25px 0;
+        font-size: 12px;
+    }
+}
+
+/* The End */
